@@ -1,0 +1,141 @@
+/* Estilos de la tarjeta digital INTERA. */
+/* Identidad visual extraída de BMS_Slide_Show_2026.pptx: azul noche, azul eléctrico y cian. */
+:root{--primary:#102951;--secondary:#64748b;--accent:#1873cf;--bg:#e9edf2;--surface:rgba(255,255,255,.86);--ink:#172435;--muted:#566474;--line:rgba(32,49,73,.1);--soft:#edf2f8;--curve:cubic-bezier(.4,0,.2,1)}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",sans-serif;color:var(--ink);background:var(--bg);min-height:100svh;display:grid;place-items:center;padding:28px 16px;background-image:radial-gradient(ellipse at 25% 15%,rgba(255,255,255,.75),transparent 65%),radial-gradient(ellipse at 85% 90%,rgba(24,115,207,.07),transparent 60%)}
+main{width:min(620px,100%);text-align:center}.eyebrow{font-size:11px;letter-spacing:.22em;font-weight:600;color:var(--muted);margin:0 0 26px;text-transform:uppercase}
+.scene{width:100%;aspect-ratio:3.5/2;perspective:1600px;container-type:inline-size}.card{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .7s var(--curve)}.scene.flipped .card{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(18px,5.2cqw,33px);text-align:left;border-radius:26px;border:1px solid var(--line);background:var(--surface);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);box-shadow:0 22px 65px rgba(21,38,62,.09),0 3px 12px rgba(21,38,62,.035);backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}.back{transform:rotateY(180deg)}
+.brand-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.brand{color:var(--primary);display:inline-flex;flex-direction:column;line-height:1}.wordmark{font-size:clamp(20px,5.5cqw,34px);font-weight:850;letter-spacing:-.075em;font-style:italic}.brand-sub{font-size:clamp(5px,1.25cqw,8px);letter-spacing:.28em;margin-top:5px;padding-left:2px}.edition{font-size:clamp(9px,1.75cqw,11px);color:var(--muted);display:flex;align-items:center;gap:6px}.dot{width:5px;height:5px;background:var(--accent);border-radius:50%}
+h1{margin:0 0 5px;font-size:clamp(23px,6.2cqw,39px);letter-spacing:-.055em;line-height:1.06;font-weight:600}.role{font-size:clamp(11px,2.5cqw,15px);color:var(--muted);margin:0;line-height:1.3}.company{font-size:clamp(9px,2cqw,12px);margin:7px 0 0;color:var(--accent);font-weight:600}
+.contacts{display:grid;grid-template-columns:1fr auto;gap:7px 16px;padding-top:clamp(8px,2.5cqw,16px);border-top:1px solid var(--line)}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}.contact{display:flex;align-items:center;gap:8px;font-size:clamp(10px,2.35cqw,14px);min-height:27px;white-space:nowrap}.contact svg{color:var(--secondary);width:15px;height:15px;flex:none}.web{grid-column:1;grid-row:3}.contact#phone{grid-column:1;grid-row:2}.contact#email{grid-column:1;grid-row:1}
+button{font:inherit;cursor:pointer;border:0;transition:transform .22s var(--curve),background .22s var(--curve),color .22s var(--curve)}button:active,a:active{transform:scale(.97)}button:hover{color:var(--accent)}svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.back-content{display:grid;grid-template-columns:1fr 43%;gap:5%;align-items:center;flex:1;min-height:0}.back h2{font-size:clamp(20px,5cqw,31px);font-weight:600;letter-spacing:-.045em;margin:0 0 9px;line-height:1.08}.back p{font-size:clamp(10px,2.3cqw,14px);color:var(--muted);margin:0;max-width:20ch;line-height:1.5}.qr-wrap{background:#fff;border-radius:12px;padding:6px;aspect-ratio:1;width:100%;max-height:100%}.qr-wrap svg{width:100%;height:100%;display:block;stroke:none;fill:var(--primary)}.back-footer{display:flex;justify-content:space-between;align-items:center;gap:10px}.social{display:flex;align-items:center;gap:8px;min-height:40px;font-size:clamp(10px,2.2cqw,13px);font-weight:500}.social svg{stroke-width:1.7}
+.controls{margin:26px 0 0;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.action{min-height:46px;padding:0 20px;border-radius:16px;background:var(--surface);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:500;border:1px solid var(--line)}.action.primary{background:var(--primary);color:#fff;border-color:transparent}.action.primary:hover{background:var(--accent)}.hint{margin:18px 0 0;font-size:11px;line-height:1.6;letter-spacing:.015em;color:var(--muted)}.status{min-height:18px;font-size:12px;color:var(--muted);margin:10px 0 0}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:380px){.face{border-radius:22px;padding:16px}.contacts{gap:2px 6px}.contact{gap:5px;font-size:10px;min-height:25px}.contact svg{width:12px;height:12px}.eyebrow{margin-bottom:20px}.controls{margin-top:20px}.edition{font-size:8px}.brand-sub{font-size:5px}.role{font-size:10px}}
+/* El texto puede ampliarse con zoom: se conserva scroll en ventanas bajas. */
+@media(max-height:500px) and (min-width:500px){main{width:min(480px,100%)}body{padding-block:18px}.eyebrow{display:none}.controls{margin-top:18px}.hint{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){.card,button{transition:none}.scene{perspective:none}}
+@container (max-width: 500px){.face{padding:5cqw}.company{display:none}.brand-sub{display:none}.wordmark{font-size:6cqw}h1{font-size:6cqw;white-space:nowrap}.role{font-size:3cqw}.contacts{padding-top:2cqw;gap:0}.contact{font-size:3cqw;min-height:6.6cqw;gap:5px}.contact svg{width:3.6cqw;height:3.6cqw}.back p{font-size:3cqw}.back h2{font-size:5.5cqw}}
+.back .brand-row{align-items:center}.back-content{grid-template-columns:1fr 40%;gap:4%;padding-top:8px}.qr-wrap{width:100%;max-width:34cqw;justify-self:end}.back .social{font-size:clamp(9px,2.4cqw,13px);min-height:28px}.back p{font-size:clamp(9px,2.6cqw,14px)}
+
+/* Aplicación del estilo de la PPTX, manteniendo la tarjeta como objeto independiente. */
+:root{--primary:var(--brand-primary,#071b3d);--secondary:var(--brand-secondary,#506581);--accent:var(--brand-accent,#007bb8);--bg:#e7edf5;--surface:rgba(252,254,255,.94);--ink:#071b3d;--muted:#4d617a;--line:rgba(7,27,61,.13);--soft:#eaf2fa;--electric:#087cf0;--cyan:#00bbf4}
+body{background-image:radial-gradient(ellipse at 10% 0%,rgba(8,124,240,.11),transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(0,187,244,.07),transparent 60%)}
+.face{background-image:radial-gradient(ellipse at 100% 0%,rgba(0,187,244,.05),transparent 58%);box-shadow:0 22px 65px rgba(4,20,47,.12),0 3px 12px rgba(4,20,47,.035)}
+.brand{display:block;line-height:0;flex:none}.brand-logo{display:block;width:clamp(96px,26cqw,162px);height:auto;object-fit:contain;filter:brightness(0) saturate(100%) invert(10%) sepia(30%) saturate(2139%) hue-rotate(182deg) brightness(95%) contrast(106%)}
+h1{font-weight:700;letter-spacing:-.045em}.company{letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.role{font-weight:500}.eyebrow{letter-spacing:.24em;color:#3f5877}.dot{background:var(--electric);box-shadow:0 0 9px rgba(8,124,240,.24)}
+.contacts{border-top-color:rgba(0,123,184,.24)}.contact svg{color:var(--accent)}.back h2{font-weight:700;letter-spacing:-.04em}.social{color:var(--accent)}
+.action.primary{background:var(--primary);color:#fff}.action.primary:hover{background:#0a3980}.action:hover{border-color:rgba(0,123,184,.35)}.qr-wrap{border-radius:10px;box-shadow:0 0 0 1px rgba(0,123,184,.07)}
+@media(prefers-color-scheme:dark){
+:root{--bg:#010a19;--surface:rgba(4,17,40,.96);--ink:#f4f8ff;--muted:#b2c4de;--line:rgba(96,169,238,.19);--soft:#0c2a4c;--accent:#65cbff}
+body{background-image:radial-gradient(ellipse at 5% 5%,rgba(20,64,138,.30),transparent 60%),radial-gradient(ellipse at 95% 95%,rgba(0,151,231,.09),transparent 60%)}
+.face{background-image:radial-gradient(ellipse at 0% 0%,rgba(20,64,138,.30),transparent 70%),radial-gradient(ellipse at 100% 100%,rgba(0,171,237,.05),transparent 65%);box-shadow:0 24px 70px rgba(0,0,0,.22),0 3px 12px rgba(0,0,0,.09)}
+.brand-logo{filter:none}.eyebrow{color:#9caec8}.company{color:var(--cyan)}.contacts{border-top-color:rgba(0,187,244,.28)}.contact svg{color:#65cbff}.dot{background:var(--cyan);box-shadow:0 0 10px rgba(0,187,244,.35)}
+.action.primary{background:#087cf0;color:#fff}.action.primary:hover{background:#0069cf}.action{background:#071b35}.social{color:#8bd9ff}
+}
+
+/* Azul de marca muestreado del fondo izquierdo de la diapositiva 1: #0F3888.
+   Se aplica a ambas caras con el degradado azul noche de la presentación. */
+.face{color:#f7faff;background-color:var(--primary);background-image:linear-gradient(115deg,var(--primary) 0%,#09265d 64%,#01143c 100%);border-color:rgba(128,191,255,.25)}
+.face .brand-logo{filter:none}.face .role,.face .edition,.face p{color:#d2e0f7}.face .company{color:#9be4ff}.face .contact svg{color:#9be4ff}.face .contacts{border-top-color:rgba(155,228,255,.32)}.face a:hover{color:#b7eaff}.face .social{color:#d5f1ff}
+.action.primary{background:var(--primary);color:#fff}.action.primary:hover{background:#164aa6}
+@media(prefers-color-scheme:dark){.face{background-image:linear-gradient(115deg,var(--primary) 0%,#082150 60%,#020f28 100%)}.action.primary{background:var(--primary);border:1px solid rgba(136,194,255,.22)}.action.primary:hover{background:#164aa6}}
+
+/* Imagen de referencia aportada por el usuario, integrada solo en el anverso.
+   Ilustración de gran formato en la capa de fondo.
+   Capas: ilustración (0), velo de contraste (1), contenido y QR (2).
+   No intercepta los clics ni participa en el flujo de la tarjeta. */
+.face{isolation:isolate}
+.face>.chip-art{position:absolute;z-index:0;width:100%;height:100%;max-width:none;max-height:none;inset:0;transform:none;overflow:hidden;opacity:.84;fill:none;stroke:none;pointer-events:none;filter:none}
+.face::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(15,56,136,.97) 0%,rgba(12,43,103,.86) 39%,rgba(7,27,65,.55) 69%,rgba(1,20,60,.08) 100%)}
+.face>:not(.chip-art){position:relative;z-index:2}
+.face h1,.face h2,.face .role,.face .company,.face .contact,.face .social,.face p{text-shadow:0 1px 3px rgba(0,8,24,.75)}
+.back::after{background:linear-gradient(90deg,rgba(15,56,136,.9),rgba(6,25,59,.69) 60%,rgba(1,20,60,.2))}
+.brand-row{align-items:center}
+@media(prefers-color-scheme:dark){.face::after{background:linear-gradient(90deg,rgba(15,56,136,.96),rgba(6,24,58,.82) 45%,rgba(2,15,40,.3) 100%)}.back::after{background:linear-gradient(90deg,rgba(15,56,136,.9),rgba(5,21,50,.74) 65%,rgba(2,15,40,.2))}}
+@media(prefers-contrast:more){.face>.chip-art{opacity:.38}.face::after{background:rgba(7,27,61,.8)}}
+
+/* Referencia visual original integrada sin dependencias externas.
+   La fotografía queda bajo el velo de contraste y todos los datos. */
+.front>.reference-chip{width:74%;height:100%;max-height:none;inset:0 0 0 auto;transform:none;object-fit:cover;object-position:50% 58%;opacity:1;filter:none}
+.front{background-color:#071525;border-color:rgba(108,198,255,.36)}
+.front::after{background:linear-gradient(90deg,rgba(15,56,136,.99) 0%,rgba(10,37,89,.95) 32%,rgba(5,23,55,.78) 53%,rgba(4,20,43,.46) 72%,rgba(2,13,27,.10) 100%)}
+.front .contacts{border-top-color:rgba(137,216,255,.38)}.front .contact svg{color:#9fe7ff}
+.back::after{display:none}.back h2,.back p,.back .social{text-shadow:none}
+@media(prefers-color-scheme:dark){.front::after{background:linear-gradient(90deg,rgba(12,43,102,.99) 0%,rgba(6,25,58,.94) 32%,rgba(3,17,37,.78) 53%,rgba(3,15,33,.43) 72%,rgba(2,10,21,.08) 100%)}}
+@media(prefers-contrast:more){.front>.reference-chip{opacity:.55}.front::after{background:linear-gradient(90deg,#071b3d,rgba(7,27,61,.8))}}
+
+/* Móvil en vertical: tarjeta 2:3 con espacio para imagen, datos y controles.
+   El ancho también tiene en cuenta la altura disponible. En pantallas muy
+   bajas se permite scroll para conservar textos legibles. */
+@media (max-width: 600px) and (orientation: portrait) {
+  body { padding: 20px 16px; }
+  main { width: min(420px, 100%, max(260px, calc((100svh - 176px) * 2 / 3))); }
+  .eyebrow { margin-bottom: 14px; font-size: 10px; letter-spacing: .18em; }
+  .scene { aspect-ratio: 2 / 3; }
+  .face { padding: clamp(18px, 6cqw, 26px); border-radius: 28px; }
+  .brand-logo { width: clamp(116px, 38cqw, 160px); }
+  .brand-row { min-height: 44px; }
+  .front { display: grid; grid-template-rows: auto minmax(0, 1fr) auto auto; gap: 16px; }
+  .front .brand-row { grid-row: 1; }
+  .identity { grid-row: 3; }
+  h1 { font-size: clamp(28px, 9cqw, 38px); white-space: normal; line-height: 1.06; margin-bottom: 9px; }
+  .role { font-size: clamp(14px, 4.5cqw, 17px); line-height: 1.4; }
+  .company { display: none; }
+  .front > .reference-chip { width: 100%; height: 100%; object-position: 50% 43%; }
+  .front::after {
+    background: linear-gradient(180deg, rgba(11,40,97,.84) 0%, rgba(4,20,45,.37) 22%, rgba(2,12,27,.13) 43%, rgba(4,20,48,.89) 68%, rgba(4,18,43,.98) 100%);
+  }
+  .contacts { grid-row: 4; grid-template-columns: minmax(0, 1fr); gap: 2px; padding-top: 8px; }
+  .contact, .contact#email, .contact#phone, .contact.web { grid-column: 1; grid-row: auto; }
+  .contact { font-size: clamp(13px, 4cqw, 16px); min-height: 32px; gap: 10px; white-space: normal; line-height: 1.3; }
+  .front .contact.address { line-height: 1.3; }
+  .contact span { min-width: 0; overflow-wrap: anywhere; }
+  .contact svg { width: 18px; height: 18px; }
+  .back { gap: 12px; }
+  .back-content { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto minmax(0, 1fr) auto; gap: 8px; padding-top: 0; text-align: center; justify-items: center; }
+  .back-copy { display: contents; }
+  .back h2 { grid-row: 1; margin: 0; font-size: clamp(28px, 8cqw, 35px); line-height: 1.08; }
+  .back p { grid-row: 2; max-width: none; font-size: 14px; line-height: 1.45; }
+  .back h2 br, .back p br { display: none; }
+  .qr-wrap { grid-row: 3; width: clamp(146px, 58cqw, 230px); max-width: 100%; max-height: none; justify-self: center; padding: 10px; border-radius: 16px; }
+  .back .social { grid-row: 4; min-height: 44px; font-size: 14px; gap: 10px; }
+  .back .social svg { width: 20px; height: 20px; }
+  .controls { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 8px; margin-top: 16px; }
+  .action { min-height: 48px; padding: 0 10px; font-size: 13px; border-radius: 15px; gap: 7px; }
+  .action svg { flex: none; width: 17px; height: 17px; }
+  .hint { display: none; }
+  .status { min-height: 32px; margin-top: 8px; line-height: 1.4; }
+}
+
+@media (max-width: 600px) and (orientation: portrait) and (prefers-color-scheme: dark) {
+  .front::after { background: linear-gradient(180deg, rgba(8,30,73,.85) 0%, rgba(3,17,36,.4) 22%, rgba(2,10,21,.16) 43%, rgba(3,17,39,.9) 68%, rgba(2,13,32,.98) 100%); }
+}
+
+@media (max-width: 600px) and (orientation: portrait) and (prefers-contrast: more) {
+  .front::after { background: linear-gradient(180deg, rgba(7,27,61,.8), rgba(7,27,61,.45) 35%, #071b3d 70%); }
+}
+
+/* Nombre propio en la primera línea; apellidos en la siguiente. */
+h1 .given-name { display: block; margin-inline-end: 0; }
+
+/* Dirección de la oficina: dos líneas y enlace táctil, sin columnas vacías. */
+.contacts { grid-template-columns: minmax(0, 1fr); }
+.contact#email, .contact#phone, .contact.web, .contact.address { grid-column: 1; grid-row: auto; }
+.contact.address { align-items: flex-start; white-space: normal; line-height: 1.45; }
+.contact.address > svg { margin-top: 2px; }
+.address-copy { display: block; }
+.address-copy > span { display: block; }
+
+/* Más espacio para los tres datos en pantallas horizontales de poca altura. */
+@media (max-height: 500px) and (min-width: 500px) {
+  .front { padding: 18px; }
+  .front .contacts { padding-top: 6px; }
+  .front .contact { min-height: 24px; font-size: clamp(11px, 2.6cqw, 13px); }
+  .front .contact.address { line-height: 1.35; }
+}
+
+/* Espacio para el nombre en dos líneas y la dirección completa en escritorio. */
+@media (min-width: 601px) and (min-height: 501px) {
+  .scene { aspect-ratio: 3.5 / 2.2; }
+}
